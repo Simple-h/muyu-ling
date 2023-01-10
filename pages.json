@@ -1,0 +1,96 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "敲木鱼攒功德"
+			}
+
+		},		
+		{
+			"path": "pages/index/paiming1",
+			"style": {
+				"navigationBarTitleText": "总排名"
+			}
+
+		},
+		{
+			"path": "pages/index/yaoqing",
+			"style": {
+				"navigationBarTitleText": "我的邀请"
+			}
+		},
+		{
+			"path": "pages/index/my",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+
+		}
+	],
+	"subPackages": [{
+		"root": "pagesA",
+		"pages": [{
+			"path": "user/setuser",
+			"style": {
+				"navigationBarTitleText": "完善个人信息",
+				"enablePullDownRefresh": false
+			}
+		}]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#333",
+		"color": "#8F8F94",
+		"selectedColor": "#f33e54",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/img/tabbar/home.png",
+				"selectedIconPath": "static/img/tabbar/homeactive.png",
+				"text": "功德"
+			},
+			{
+				"pagePath": "pages/index/paiming1",
+				"iconPath": "static/img/tabbar/排名1.png",
+				"selectedIconPath": "static/img/tabbar/排名.png",
+				"text": "排名"
+			},
+			// //#ifdef MP-WEIXIN
+			// {
+			// 	"pagePath": "pages/tabbar/tabbar-3/tabbar-3",
+			// 	"iconPath": "static/img/tabbar/add.png",
+			// 	"selectedIconPath": "static/img/tabbar/addactive.png",
+			// 	"text": "发布"
+			// },
+			// //#endif
+			// //#ifndef MP-WEIXIN
+			// {
+			// 	"pagePath": "pages/order/order",
+			// 	"iconPath": "static/img/tabbar/add.png",
+			// 	"selectedIconPath": "static/img/tabbar/addactive.png"
+			// },
+			// //#endif
+			{
+				"pagePath": "pages/index/yaoqing",
+				"iconPath": "static/img/tabbar/news.png",
+				"selectedIconPath": "static/img/tabbar/newsactive.png",
+				"text": "邀请"
+			},
+			{
+				"pagePath": "pages/index/my",
+				"iconPath": "static/img/tabbar/me.png",
+				"selectedIconPath": "static/img/tabbar/meactive.png",
+				"text": "我"
+			}
+		]
+	},
+	"uni_modules": {}
+}
